@@ -62,7 +62,7 @@ OSH_THEME="rr"
 # * '[dd.mm.yyyy]'   # [dd.mm.yyyy] + [time] with colors
 # * '[yyyy-mm-dd]'   # [yyyy-mm-dd] + [time] with colors
 # If not set, the default value is 'yyyy-mm-dd'.
-HIST_STAMPS=[mm/dd/yyyy] + [time] with colors
+# HIST_STAMPS=[mm/dd/yyyy] + [time] with colors
 
 # Uncomment the following line if you do not want OMB to overwrite the existing
 # aliases by the default OMB aliases defined in lib/*.sh
@@ -104,7 +104,7 @@ aliases=(
 plugins=(
 	git
 	bashmarks
-  sudo
+	sudo
 )
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
