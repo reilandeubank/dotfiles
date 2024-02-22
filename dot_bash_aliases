@@ -1,0 +1,5 @@
+alias python='python3'
+alias update='sudo apt update && sudo apt upgrade'
+alias install='sudo apt install'
+alias myserver='ssh reilandeubank@192.168.0.2'
+alias sd="cd ~ && cd \$(find * -type d | fzf)"
