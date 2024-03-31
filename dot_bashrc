@@ -135,6 +135,8 @@ fi
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+export GTK_THEME='Breeze:dark'
+export PATH=$PATH:/usr/local/go/bin
 # Set personal aliases, overriding those provided by oh-my-bash libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-bash
 # users are encouraged to define aliases within the OSH_CUSTOM folder.
@@ -143,3 +145,13 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+export PATH=$PATH:/home/reilandeubank/.local/bin
+. "$HOME/.cargo/env"
