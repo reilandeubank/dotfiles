@@ -23,7 +23,8 @@ set $menu rofi -show drun | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/amsterdam.jpg fill
+#output * bg /usr/share/backgrounds/sway/amsterdam.jpg fill
+output * bg ~/Pictures/nyc.jpeg fill
 #
 # Example configuration:
 #
@@ -226,11 +227,21 @@ bindsym XF86AudioMute exec amixer set Master toggle
 bindsym XF86MonBrightnessUp exec light -T 1.15
 bindsym XF86MonBrightnessDown exec light -T 0.8
 
-exec export QT_QPA_PLATFORMTHEME=breezedark
+exec export QT_QPA_PLATFORMTHEME=Breeze:dark
+
+set $gnome-schema org.gnome.desktop.interface
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'breeze-dark'
+    #gsettings set $gnome-schema icon-theme 'Adwaita'
+    #gsettings set $gnome-schema cursor-theme 'Your cursor Theme'
+    #gsettings set $gnome-schema font-name 'Your font name'
+}
 
 gaps inner 5
 default_border none
 exec nm-applet --indicator
 exec brave-browser
+exec export QT_QPA_PLATFORMTHEME=qt5ct
 
 include /etc/sway/config.d/*
